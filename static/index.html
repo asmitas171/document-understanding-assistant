@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Understanding Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Document Understanding Assistant</h1>
+            <p>Upload a business document to extract, validate, and summarize its information.</p>
+        </header>
+
+        <section class="upload-card">
+            <h2>Upload Document</h2>
+            <form id="uploadForm">
+                <label for="document">Choose a PDF or DOCX file</label>
+                <input type="file" id="document" name="file"
+                       accept=".pdf,.docx" required>
+                <button type="submit" id="analyzeButton">Analyze Document</button>
+            </form>
+            <p id="message" role="status"></p>
+        </section>
+
+        <section id="results" hidden>
+            <h2>Analysis Results</h2>
+
+            <div class="result-card">
+                <h3>Document Summary</h3>
+                <p id="summary"></p>
+            </div>
+
+            <div class="result-card">
+                <h3>Extracted Information</h3>
+                <div id="entities"></div>
+            </div>
+
+            <div class="result-card">
+                <h3>Validation</h3>
+                <p id="validationStatus"></p>
+                <ul id="errors"></ul>
+                <ul id="warnings"></ul>
+            </div>
+
+            <details class="result-card">
+                <summary>View Full Extracted Text</summary>
+                <pre id="extractedText"></pre>
+            </details>
+        </section>
+
+        <footer>
+            <p>Document Understanding Assistant | Rule-Based Processing</p>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+{
+    "sample_invoice.docx": {
+        "invoice_number": "INV-1001",
+        "customer": "ABC Technologies",
+        "date": "07/10/2026",
+        "total_amount": "INR 25000",
+        "payment_status": "Pending"
+    },
+    "sample_invoice_2.docx": {
+        "invoice_number": "INV-1002",
+        "customer": "Bright Solutions",
+        "date": "15/10/2026",
+        "total_amount": "INR 18500",
+        "payment_status": "Paid"
+    },
+    "sample_invoice_3.docx": {
+        "invoice_number": "INV-1003",
+        "customer": "GreenTech Services",
+        "date": "INVALID-DATE",
+        "total_amount": "INR 12000",
+        "payment_status": "Pending"
+    }
+}
